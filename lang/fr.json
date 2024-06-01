@@ -1,0 +1,19 @@
+{
+    "welcome_title": "Bienvenue<br>chez<br>FutureTech",
+    "welcome_message": "Votre partenaire de confiance pour toutes vos solutions technologiques. Nous vous proposons une gamme complète de services pour répondre à tous vos besoins en matière de technologie de l'information. Explorez nos offres et découvrez comment nous pouvons vous aider à atteindre vos objectifs numériques.",
+    "services_title": "Nos Services",
+    "service1_title": "Création de Sites Web et Applications",
+    "service1_description": "Des sites web et applications de haute qualité, adaptés à vos besoins spécifiques.",
+    "service2_title": "Solutions Digitales",
+    "service2_description": "Optimisez vos processus et améliorez l'efficacité de votre entreprise.",
+    "service3_title": "Solutions Cloud",
+    "service3_description": "Des solutions cloud flexibles et sécurisées pour tous vos besoins en matière de données.",
+    "service4_title": "Méthodes IA",
+    "service4_description": "Intégrez des solutions d'intelligence artificielle pour révolutionner votre façon de travailler.",
+    "service5_title": "Dashboards Power BI",
+    "service5_description": "Des tableaux de bord interactifs pour des insights en temps réel.",
+    "service6_title": "Nettoyage de Données",
+    "service6_description": "Assurez la précision et la qualité de vos données avec nos services de nettoyage.",
+    "follow_us": "Suivez-nous",
+    "all_rights_reserved": "tout droit réservé"
+}
