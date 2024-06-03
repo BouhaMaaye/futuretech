@@ -225,7 +225,28 @@
                 }
             }
         }
+        // Lorsque l'utilisateur fait défiler vers le bas de 20px à partir du haut du document, afficher le bouton
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    const backToTopBtn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+}
+
+// Lorsque l'utilisateur clique sur le bouton, faire défiler vers le haut du document
+function topFunction() {
+    document.body.scrollTop = 0; // Pour Safari
+    document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE et Opera
+}
     </script>
+    <button onclick="topFunction()" id="backToTopBtn" title="Retour en haut">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
 </body>
 </html>
 

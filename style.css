@@ -680,6 +680,27 @@ footer {
     background-color: #000;
     color: #fff;
 }
+/* Bouton de retour en haut */
+#backToTopBtn {
+    display: none; /* Cacher le bouton par défaut */
+    position: fixed; /* Positionné par rapport à la fenêtre du navigateur */
+    bottom: 20px; /* 20px depuis le bas */
+    right: 30px; /* 30px depuis la droite */
+    z-index: 99; /* Assurer que le bouton soit au-dessus des autres éléments */
+    font-size: 18px; /* Taille du texte */
+    border: none; /* Pas de bordure */
+    outline: none; /* Pas de contour */
+    background-color: #555; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    cursor: pointer; /* Pointeur de la souris */
+    padding: 15px; /* Espacement interne */
+    border-radius: 10px; /* Bords arrondis */
+    transition: background-color 0.3s; /* Transition pour changement de couleur */
+}
+
+#backToTopBtn:hover {
+    background-color: #000; /* Couleur de fond en survol */
+}
 
 /* Styles pour les téléphones */
 @media (max-width: 600px) {
