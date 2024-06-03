@@ -1,6 +1,11 @@
 {
-    "welcome_title": "Bienvenue<br>chez<br>FutureTech",
-    "welcome_message": "Votre partenaire de confiance pour toutes vos solutions technologiques. Nous vous proposons une gamme complète de services pour répondre à tous vos besoins en matière de technologie de l'information. Explorez nos offres et découvrez comment nous pouvons vous aider à atteindre vos objectifs numériques.",
+    "home": "Accueil",
+    "services": "Nos Services",
+    "contact": "Contact",
+    "welcome_title": "Propulsant la Transformation Digitale Pour<br>Préparer les Entreprises au Futur<br><br>",
+    "welcome_message": "Grâce à une ingénierie de qualité, à l'efficacité et à la rapidité, économisant des milliers d'heures de travail.<br><br>Enchantant des centaines d'utilisateurs de technologies.",
+    "about_us": "À propos de nous",
+    "about_us_description": "FutureTech est votre partenaire de confiance pour toutes vos solutions technologiques. Située à Nouakchott, Mauritanie, notre entreprise se spécialise dans la fourniture de services de qualité en ingénierie, en efficacité et en rapidité, économisant des milliers d'heures de travail. Nous sommes fiers d'enchanter des centaines d'utilisateurs de technologies avec nos solutions innovantes et notre engagement envers l'excellence.",
     "services_title": "Nos Services",
     "service1_title": "Création de Sites Web et Applications",
     "service1_description": "Des sites web et applications de haute qualité, adaptés à vos besoins spécifiques.",
@@ -14,6 +19,13 @@
     "service5_description": "Des tableaux de bord interactifs pour des insights en temps réel.",
     "service6_title": "Nettoyage de Données",
     "service6_description": "Assurez la précision et la qualité de vos données avec nos services de nettoyage.",
-    "follow_us": "Suivez-nous",
+    "contact_title": "Contactez-Nous",
+    "contact_name": "Nom",
+    "contact_email": "Email",
+    "contact_phone": "Téléphone",
+    "contact_company": "Entreprise",
+    "contact_message": "Message",
+    "contact_submit": "Envoyer",
+    "follow_us": "suivez-nous",
     "all_rights_reserved": "tout droit réservé"
 }

@@ -17,9 +17,9 @@
             </a>
             <nav class="header-nav">
                 <ul class="header-menu">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="ride.html">Nos Services</a></li>
-                    <li><a href="share.html">Contact</a></li>
+                    <li><a href="#home" data-key="home">Accueil</a></li>
+                    <li><a href="#services" data-key="services">Nos Services</a></li>
+                    <li><a href="#contact" data-key="contact">Contact</a></li>
                 </ul>
             </nav>
             <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
@@ -38,21 +38,20 @@
         </div>
     </header>
 
-    <section class="home">
+    <section id="home" class="home">
         <div id="particles-js"></div>
         <div class="home__content">
             <h1 class="title" data-key="welcome_title">
                 Propulsant la Transformation Digitale Pour<br>
                  Préparer les Entreprises au Futur<br>
                  <br>
-
             </h1>
             <p data-key="welcome_message">Grâce à une ingénierie de qualité, à l'efficacité et à la rapidité, économisant des milliers d'heures de travail.<br>
                 <br>
-
                 Enchantant des centaines d'utilisateurs de technologies.</p>
         </div>
     </section>
+
     <!-- Section de présentation de l'entreprise -->
     <section id="about-us" class="about-us">
         <div class="container">
@@ -60,12 +59,11 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15602.046293166108!2d-15.972624!3d18.0761061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4408c97e40ad7a2b%3A0xa60154e6bbde5404!2sNouakchott%2C%20Mauritanie!5e0!3m2!1sfr!2s!4v1622474771181!5m2!1sfr!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="about-us__content">
-                <h2>À propos de nous</h2>
-                <p>FutureTech est votre partenaire de confiance pour toutes vos solutions technologiques. Située à Nouakchott, Mauritanie, notre entreprise se spécialise dans la fourniture de services de qualité en ingénierie, en efficacité et en rapidité, économisant des milliers d'heures de travail. Nous sommes fiers d'enchanter des centaines d'utilisateurs de technologies avec nos solutions innovantes et notre engagement envers l'excellence.</p>
+                <h2 data-key="about_us">À propos de nous</h2>
+                <p data-key="about_us_description">FutureTech est votre partenaire de confiance pour toutes vos solutions technologiques. Située à Nouakchott, Mauritanie, notre entreprise se spécialise dans la fourniture de services de qualité en ingénierie, en efficacité et en rapidité, économisant des milliers d'heures de travail. Nous sommes fiers d'enchanter des centaines d'utilisateurs de technologies avec nos solutions innovantes et notre engagement envers l'excellence.</p>
             </div>
         </div>
     </section>
-    
 
     <section id="services">
         <h2 class="title animated-title" data-key="services_title">Nos Services</h2>
@@ -102,6 +100,7 @@
             </div>
         </div>
     </section>
+    
     <!-- Section de contact -->
     <section id="contact">
         <div class="contact__content">
@@ -137,18 +136,29 @@
     </section>
 
     <footer>
-        <div class="col1">
-            <p data-key="follow_us">suivez-nous</p>
+        <div class="footer-column">
+            <h3 data-key="follow_us">Suivez-nous</h3>
             <div class="icons">
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <p>&copy;2024 FutureTech, <span data-key="all_rights_reserved">tout droit réservé</span></p>
         </div>
-        <div class="col4">
-            <button class="top_btn" onclick="link()">to top</button>
-            <p>site by FutureTech</p>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p><a href="mailto:contact@futuretech.com">contact@futuretech.com</a></p>
+            <p><a href="tel:+1234567890">+1 234 567 890</a></p>
+            <p>123 FutureTech Street<br>Nouakchott, Mauritanie</p>
+        </div>
+        <div class="footer-column">
+            <h3>Liens rapides             </h3>
+            <p><a href="#home" data-key="home">Accueil</a></p>
+            <p><a href="#services" data-key="services">Nos Services</a></p>
+            <p><a href="#contact" data-key="contact">Contact</a></p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2024 FutureTech, <span data-key="all_rights_reserved">tout droit réservé</span></p>
+            <p>Site by FutureTech</p>
         </div>
     </footer>
 
@@ -156,14 +166,14 @@
     <script src="script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.getElementById('hamburger');
-    const headerNav = document.querySelector('.header-nav');
+            const hamburger = document.getElementById('hamburger');
+            const headerNav = document.querySelector('.header-nav');
 
-    hamburger.addEventListener('click', function() {
-        headerNav.classList.toggle('active');
-        const expanded = headerNav.classList.contains('active');
-        hamburger.setAttribute('aria-expanded', expanded);
-    });
+            hamburger.addEventListener('click', function() {
+                headerNav.classList.toggle('active');
+                const expanded = headerNav.classList.contains('active');
+                hamburger.setAttribute('aria-expanded', expanded);
+            });
 
             const serviceItems = document.querySelectorAll('.service-item');
 
@@ -196,6 +206,7 @@
                         element.innerHTML = data[key];
                     });
                     document.documentElement.setAttribute('lang', lang); // Mise à jour de la langue de la balise HTML
+                    document.getElementById('lang-btn').innerText = lang.toUpperCase(); // Mise à jour du bouton de sélection de langue
                 });
         }
 
@@ -217,3 +228,4 @@
     </script>
 </body>
 </html>
+

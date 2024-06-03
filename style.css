@@ -73,7 +73,7 @@ body {
 .header-menu {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 150px; /* Augmenté l'espace entre les éléments */
 }
 
 .header-menu li {
@@ -493,14 +493,76 @@ h1, p {
 
 /* Footer */
 footer {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 35px;
-    padding: 35px 8%;
-    margin-top: 35px;
-    text-transform: uppercase;
+    width: 100%; /* Assure que le footer prend toute la largeur */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 8%;
     background-color: rgba(1, 23, 46, 0.8);
+    color: #fff; /* Texte en blanc */
+    text-align: center;
+}
+
+.footer-column {
+    flex: 1 1 30%;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-column p,
+.footer-column a {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ccc; /* Texte en gris clair */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #fff; /* Texte en blanc */
+}
+
+.footer-column .icons {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    margin-top: 10px; /* Add some margin to separate from the content above */
+}
+
+.footer-column .icons i {
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: 0.5s ease-out;
+}
+
+.footer-column .icons i:hover {
+    background-color: #0e0e0e;
+    color: #fff;
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-bottom span {
+    color: #fff; /* Texte en blanc */
 }
 
 .col1 {
@@ -740,12 +802,35 @@ footer {
         flex: 1 1 100%;
     }
     footer {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, auto);
-        grid-column-gap: 0;
+        flex-direction: column;
         padding: 20px 4%;
     }
 
+    .footer-column {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+    }
+
+    .footer-column p,
+    .footer-column a {
+        font-size: 12px;
+    }
+
+    .footer-column .icons i {
+        height: 35px;
+        width: 35px;
+        margin: 0 5px;
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+        padding-top: 10px;
+    }
     .col1 {
         grid-area: 1 / 1 / 2 / 2;
     }
@@ -838,3 +923,4 @@ footer {
         transform: translateX(0);
     }
 }
+
